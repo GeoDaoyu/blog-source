@@ -1,0 +1,44 @@
+name: Deploy Blog
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 11
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Generate site
+        run: pnpm hexo generate
+
+      - name: Deploy to GeoDaoyu.github.io
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          deploy_key: ${{ secrets.DEPLOY_KEY }}
+          external_repository: GeoDaoyu/GeoDaoyu.github.io
+          publish_branch: master
+          publish_dir: ./public
+          force_orphan: true
+          user_name: GeoDaoyu
+          user_email: 34641603+GeoDaoyu@users.noreply.github.com
