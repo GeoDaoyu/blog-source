@@ -1,0 +1,51 @@
+# ===============================================================
+# NexT 8.29 主题配置覆盖（GeoDaoyu 博客）
+# 迁移自旧 NexT 5 的自定义设置
+# 文档: https://theme-next.js.org/docs/getting-started/configuration
+# ===============================================================
+
+# 布局方案（与旧主题一致: Pisces）
+scheme: Pisces
+
+# 菜单
+menu:
+  home: / || fa fa-home
+  about: /about/ || fa fa-user
+  tags: /tags/ || fa fa-tags
+  categories: /categories/ || fa fa-th
+  archives: /archives/ || fa fa-archive
+
+# 社交链接
+social:
+  GitHub: https://github.com/GeoDaoyu || fab fa-github
+  E-Mail: mailto:geodaoyu@foxmail.com || fa fa-envelope
+
+# 头像（站点 source/images/avatar.jpg）
+avatar:
+  url: /images/avatar.jpg
+
+# 页脚
+footer:
+  since: 2020
+  icon:
+    name: fa fa-user
+
+# 文章元信息：显示更新日期
+post_meta:
+  updated_at:
+    enable: true
+    another_day: true
+
+# 字数统计（依赖 hexo-word-counter）
+symbols_count_time:
+  word_count: true
+  min2read: true
+  totalcount: true
+
+# 本地搜索（依赖 hexo-generator-searchdb）
+local_search:
+  enable: true
+
+# 自定义 head（referrer 设置，沿用旧主题）
+custom_file_path:
+  head: source/_data/head.njk

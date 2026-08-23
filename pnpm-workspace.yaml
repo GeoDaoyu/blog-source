@@ -2,3 +2,4 @@
 # https://pnpm.io/settings
 allowBuilds:
   hexo-util: true
+  hexo-word-counter: true
