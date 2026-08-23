@@ -1,0 +1,4 @@
+# pnpm 11 build-script permissions
+# https://pnpm.io/settings
+allowBuilds:
+  hexo-util: true
