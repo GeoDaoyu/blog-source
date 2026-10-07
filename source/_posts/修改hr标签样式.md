@@ -8,7 +8,7 @@ categories:
 - CSS
 ---
 
-一段来自的w3school介绍：
+一段来自 w3school 的介绍：
 
 > `<hr>`标签在 HTML 页面中创建一条水平线。
 >

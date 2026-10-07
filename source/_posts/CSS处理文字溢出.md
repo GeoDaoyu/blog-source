@@ -25,8 +25,8 @@ white-space: nowrap;
 
 + `text-overflow`— 规定当文本溢出包含元素时发生的事情.
 + `text-overflow: ellipsis`— 显示省略符号来代表被修剪的文本.
-+ `white-space`— 设置如何处理元素内的空白 .
-+ `white-space: nowrap`文本不会换行，文本会在在同一行上继续，直到遇到 `<br>` 标签为止.
++ `white-space`— 设置如何处理元素内的空白.
++ `white-space: nowrap`文本不会换行，文本会在同一行上继续，直到遇到 `<br>` 标签为止.
 
 ## 多行文字
 
@@ -40,6 +40,6 @@ overflow: hidden;
 参数说明：
 
 + `-webkit-line-clamp`— webkit的私有属性，用来限制在一个块元素显示的文本的行数.
-+ `-webkit-box-orient`— 设置或检索伸缩盒对象的子元素的排列方式 .
++ `-webkit-box-orient`— 设置或检索伸缩盒对象的子元素的排列方式.
 + `display: -webkit-box`— 将对象作为弹性伸缩盒子模型显示.
 

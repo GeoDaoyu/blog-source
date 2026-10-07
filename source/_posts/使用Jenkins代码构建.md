@@ -16,7 +16,7 @@ categories:
 
 [官网](https://www.jenkins.io/)的介绍和文档写的也很详尽了，下面我简单介绍下流程。
 
-本文针对是Windows。Linux的环境时，一般都是内网，无法通过Git拉取更新。
+本文针对的是Windows。Linux的环境时，一般都是内网，无法通过Git拉取更新。
 <!-- more -->
 ## 1 环境准备
 
@@ -86,7 +86,7 @@ Jenkins 是基于 Java 的独立程序，所以需要Java环境，这里不细�
 
 需要在GitLab开启Webhooks，在Jenkins中安装 GitLab Hook插件。
 
-> 修改jenkins配置，在jenkins的 Config System 功能中，取消 Enable authentication for ‘/project’ end-point 的选中状
+> 修改jenkins配置，在jenkins的 Config System 功能中，取消 Enable authentication for ‘/project’ end-point 的选中状态
 
 ### 3.4 构建
 
@@ -106,7 +106,7 @@ Copy-Item dist C:\Projects\xxx -Recurse
 
 #### 3.4.2 gradle构建
 
-流程：git拉取->gradel打jar包->停止jar包->替换文件->启动新的jar包
+流程：git拉取->gradle打jar包->停止jar包->替换文件->启动新的jar包
 
 ### 3.5 通知
 
@@ -120,7 +120,7 @@ Copy-Item dist C:\Projects\xxx -Recurse
 
 然后后面就不怎么用管它了。
 
-我理解的自动构建的实质就是，在服务器上放了一个"金老头"，然后把帮你把你手动操作的构建部署做一遍。
+我理解的自动构建的实质就是，在服务器上放了一个"金老头"，然后帮你把手动操作的构建部署做一遍。
 
 如果构建失败，可以在Jenkins页面查看日志，排查问题。但是一般直接重新构建就能成功。
 

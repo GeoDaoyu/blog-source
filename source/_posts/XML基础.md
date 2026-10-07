@@ -28,7 +28,7 @@ const htmlCollection = xml.getElementsByTagName('title');
 
 通过标签名，获取到指定标签名的所有元素的节点列表。
 
-结果是一个htmlCollection对象，长的和数组一样，但是没有数组的许多方法。
+结果是一个htmlCollection对象，长得和数组一样，但是没有数组的许多方法。
 
 ## 遍历
 

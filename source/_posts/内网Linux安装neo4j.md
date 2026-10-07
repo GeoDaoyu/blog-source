@@ -73,5 +73,5 @@ neo4j默认不开启ip地址监听，所以别的服务器访问不了neo4j的�
 vim neo4j.conf
 ```
 
-在配置中，把`dbms.connectorss.default_listen_address=0.0.0.0`解除注释即开启监听。记得重启。
+在配置中，把`dbms.connectors.default_listen_address=0.0.0.0`解除注释即开启监听。记得重启。
 
