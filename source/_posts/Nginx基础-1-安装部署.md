@@ -44,14 +44,14 @@ sudo yum install yum-utils
 sudo yum install nginx
 ~~~
 
-安装后，cd到` /usr/sbin/`目录下启动nginx
+安装后，cd到`/usr/sbin/`目录下启动nginx
 
 ~~~ shell
 cd /usr/sbin
 ./nginx
 ~~~
 
-配置在` /etc/nginx`目录下修改`nginx.conf`
+配置在`/etc/nginx`目录下修改`nginx.conf`
 
 **常用命令**：
 

@@ -27,7 +27,7 @@ a hooks library
 
 ## DvaJS
 
-`dva `首先是一个基于 `redux`和`redux-saga` 的数据流方案，然后为了简化开发体验，`dva `还额外内置了 `react-router` 和 `fetch`，所以也可以理解为一个轻量级的应用框架。
+`dva`首先是一个基于 `redux`和`redux-saga` 的数据流方案，然后为了简化开发体验，`dva`还额外内置了 `react-router` 和 `fetch`，所以也可以理解为一个轻量级的应用框架。
 
 链接：https://dvajs.com/
 
@@ -67,7 +67,7 @@ A window.fetch JavaScript polyfill.
 
 ### less
 
-`Less `是一门 CSS 预处理语言，它扩展了 CSS 语言，增加了变量、Mixin、函数等特性，使 CSS 更易维护和扩展。
+`Less`是一门 CSS 预处理语言，它扩展了 CSS 语言，增加了变量、Mixin、函数等特性，使 CSS 更易维护和扩展。
 
 链接：http://lesscss.cn/
 

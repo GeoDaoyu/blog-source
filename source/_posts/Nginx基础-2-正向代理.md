@@ -34,7 +34,7 @@ server {
 
 前端往`http://localhost:8088/juhe/`上发送的请求，都会代理到`http://v.juhe.cn/`上。根据API接口的地址往请求url上追加即可。
 
-如：想请求` http://v.juhe.cn/weather/index`，则访问` http://localhost:8088/juhe/weather/index`。
+如：想请求`http://v.juhe.cn/weather/index`，则访问`http://localhost:8088/juhe/weather/index`。
 
 ## proxy_pass说明
 
@@ -42,7 +42,7 @@ server {
 
 下面举4种情况来说明，注意看proxy_pass中末尾有无 / 。
 
-1. 访问地址：` http://localhost:8088/juhe/weather/index`
+1. 访问地址：`http://localhost:8088/juhe/weather/index`
 
    ```
    location /juhe/ {
@@ -50,9 +50,9 @@ server {
    }
    ```
 
-   真实地址：`http://v.juhe.cn/`+` weather/index`=` http://v.juhe.cn/weather/index`
+   真实地址：`http://v.juhe.cn/`+`weather/index`=`http://v.juhe.cn/weather/index`
 
-2. 访问地址：` http://localhost:8088/weather/index`
+2. 访问地址：`http://localhost:8088/weather/index`
 
    ```
    location /weather/ {
@@ -60,9 +60,9 @@ server {
    }
    ```
 
-   真实地址：`http://v.juhe.cn`+` /weather/index`=` http://v.juhe.cn/weather/index`
+   真实地址：`http://v.juhe.cn`+`/weather/index`=`http://v.juhe.cn/weather/index`
 
-3. 访问地址：` http://localhost:8088/juhe/index`
+3. 访问地址：`http://localhost:8088/juhe/index`
 
    ```
    location /juhe/ {
@@ -70,9 +70,9 @@ server {
    }
    ```
 
-   真实地址：` http://v.juhe.cn/weather/`+` index`=` http://v.juhe.cn/weather/index`
+   真实地址：`http://v.juhe.cn/weather/`+`index`=`http://v.juhe.cn/weather/index`
 
-4. 访问地址：` http://localhost:8088/juhe/ther/index`
+4. 访问地址：`http://localhost:8088/juhe/ther/index`
 
    ```
    location /juhe/ {
@@ -80,7 +80,7 @@ server {
    }
    ```
 
-   真实地址：`http://v.juhe.cn/wea`+` ther/index`=` http://v.juhe.cn/weather/index`
+   真实地址：`http://v.juhe.cn/wea`+`ther/index`=`http://v.juhe.cn/weather/index`
 
 ## 补充
 
