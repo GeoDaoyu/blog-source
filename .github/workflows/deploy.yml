@@ -18,19 +18,15 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v7
 
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v6
+      # 一步装好 pnpm + Node 24，并缓存 pnpm store（替代 pnpm/action-setup + actions/setup-node）
+      - name: Setup pnpm and Node
+        uses: pnpm/setup@v3
         with:
           version: 11
-
-      - name: Setup Node
-        uses: actions/setup-node@v7
-        with:
-          node-version: 24
-          cache: pnpm
-
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+          runtime: node@24
+          cache: true
+          # 等价于 pnpm install --frozen-lockfile，且 lockfile 缺失时直接失败
+          require-lockfile: true
 
       - name: Generate site
         run: pnpm hexo generate
