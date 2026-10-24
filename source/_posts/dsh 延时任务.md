@@ -7,7 +7,7 @@ tags:
 - harness
 - 定时任务
 categories:
-- 工具
+- AI
 ---
 DeepSeek 的 token 计费分峰时和谷时，谷时价格只有峰时的一半。
 
